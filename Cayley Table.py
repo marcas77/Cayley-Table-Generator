@@ -11,9 +11,6 @@ def Zprinter(newZ,mod,xlname):
     for i in range(0,len(newZ)):
         list3 = []
         for k in range(0,len(newZ)):
-            if (k==0):
-                list3.append(newZ[i])
-            else:
                 list3.append((newZ[k]+newZ[i]) % mod)
         print(list3)
         biglist.append(list3)
@@ -27,9 +24,6 @@ def Uprinter(newU,mod,xlname):
     for i in range(0,len(newU)):
         list3 = []
         for k in range(0,len(newU)):
-            if (k==0):
-                list3.append(newU[i])
-            else:
                 list3.append((newU[k]*newU[i]) % mod)
         print(list3)
         biglist.append(list3)
